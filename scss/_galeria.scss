@@ -1,0 +1,90 @@
+// galeria.html
+#galeria{
+    display:grid;
+    grid-template-areas:
+    "foto1 foto1 foto2 foto2 foto2"
+    "foto3 foto3 foto2 foto2 foto2"
+    "foto3 foto3 foto2 foto2 foto2"
+    "foto4 foto5 foto6 foto7 foto8";
+    gap: 5px;
+    margin: 30px 0;
+}
+
+.foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8{
+    max-width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.foto1{
+    background-image: url(../images/galeria/6.jpg);
+    grid-area: foto1; 
+}
+
+.foto2{
+    background-image: url(../images/galeria/R.jpeg);
+    grid-area: foto2;
+    height:100%;
+}
+
+.foto3{
+    background-image: url(../images/galeria/5.jpg);
+    grid-area: foto3;
+    height: 400px;
+}
+
+.foto4{
+    background-image: url(../images/galeria/4.jpeg);
+    grid-area: foto4;
+}
+
+.foto5{
+    background-image: url(../images/galeria/3.jpeg);
+    grid-area: foto5;
+}
+
+.foto6{
+    background-image: url(../images/galeria/1.jpg);
+    grid-area: foto6;
+}
+
+.foto7{
+    background-image: url(../images/galeria/2.png);
+    grid-area: foto7;
+}
+
+.foto8{
+    background-image: url(../images/galeria/8.jpg);
+    grid-area: foto8;
+}
+
+.foto1:hover, .foto2:hover, .foto3:hover, .foto4:hover, .foto5:hover, .foto6:hover, .foto7:hover, .foto8:hover {
+    transform: scale(1.2); 
+    transition: transform 0.3s ease; 
+}
+
+.video{
+    gap:25px;
+    // display: flex;
+}
+
+@media(min-width:425px){
+    .video{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width:768px){
+    .video{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(min-width:769px){
+    .video{
+        display: flex;
+        flex-direction: row;
+    }
+}

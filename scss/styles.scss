@@ -1,0 +1,61 @@
+@import "reset";
+@import "index";
+@import "historia";
+@import "galeria";
+
+
+.logo-principal{
+    width: 150px;
+}
+
+body{
+    background: linear-gradient(180deg,#fff 10%,#3df4,rgb(64, 228, 196));
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bi{
+    font-size: 1.3rem;
+    color: black;
+}
+
+.redes-sociales{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.sponsors img{
+    width: 80px;
+}
+
+.sponsors{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/*Estilos ganadores.html*/
+
+.title-carrera{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+}
+
+// contacto
+.formulario{
+    width:80%;
+}
+
+// FOOTER
+.rrss{
+    gap:24px;
+}
+/* font-family: 'Bebas Neue', sans-serif;
+font-family: 'Croissant One', cursive; */
