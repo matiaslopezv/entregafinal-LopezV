@@ -48,33 +48,33 @@ img {
     width: 75%;
   }
 }
+/*texto principal*/
 .texto-main {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.7rem;
 }
 
+/*cards grandes vueltas*/
 .container-cards {
   display: flex;
   justify-content: space-evenly;
 }
-
-.card-img-top {
-  width: 300px;
-  height: 50%;
-}
-
-.card {
+.container-cards .card {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
-
-.card-body {
+.container-cards .card .card-img-top {
+  width: 300px;
+  height: 50%;
+}
+.container-cards .card .card-body {
   display: flex;
   align-items: center;
+  background: linear-gradient(180deg, #fff 10%, rgba(51, 221, 255, 0.2666666667), rgb(78, 216, 189));
 }
-
-.card-body p {
+.container-cards .card .card-body p {
   font-family: "Croissant One", cursive;
   font-size: 1.2rem;
 }
@@ -101,10 +101,6 @@ img {
   width: 200px;
   border-radius: 50%;
   border: solid 1px;
-}
-
-#nombres-ganadores {
-  display: none;
 }
 
 @media (min-width: 426px) {
@@ -310,7 +306,5 @@ footer .rrss .bi {
     align-items: center;
   }
 }
-/* font-family: 'Bebas Neue', sans-serif;
-font-family: 'Croissant One', cursive; */
 
 /*# sourceMappingURL=styles.css.map */
