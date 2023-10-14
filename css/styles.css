@@ -4,8 +4,18 @@
   box-sizing: border-box;
 }
 
+/* font-family: 'Bebas Neue', sans-serif;
+font-family: 'Croissant One', cursive; */
+body {
+  background: linear-gradient(180deg, #fff 10%, rgba(51, 221, 255, 0.2666666667), rgb(64, 228, 196));
+}
+
 img {
   max-width: 100%;
+}
+
+.logo-principal {
+  width: 150px;
 }
 
 .nav-link {
@@ -82,16 +92,15 @@ img {
     gap: 15px;
   }
 }
-.winners img {
-  width: 200px;
-  border-radius: 50%;
-  border: solid 1px;
-}
-
 .winners {
   display: flex;
   flex-direction: column;
   cursor: pointer;
+}
+.winners img {
+  width: 200px;
+  border-radius: 50%;
+  border: solid 1px;
 }
 
 #nombres-ganadores {
@@ -110,49 +119,35 @@ img {
   }
 }
 /* Estilos historia.html */
-.bi-bicycle {
-  font-size: 2.3rem;
-}
-
-.bi-feather {
-  font-size: 2rem;
-}
-
 .historia-title {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.8rem;
+}
+.historia-title .bi-feather {
+  font-size: 2rem;
+}
+.historia-title .bi-bicycle {
+  font-size: 2.3rem;
 }
 
 .historia-texto {
   font-family: "Bebas Neue", sans-serif;
 }
 
-figure img {
-  width: 200px;
-}
-
-.figure img {
-  width: 200px;
-  transition: opacity 0.3s ease;
-}
-
-.figure img:hover {
-  opacity: 0.3;
-}
-
-.figure-caption {
-  color: black;
-  font-weight: bold;
-}
-
-.grandes-ganadores img {
-  height: 30vh;
-}
-
 .grandes-ganadores {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+}
+.grandes-ganadores img {
+  height: 30vh;
+}
+.grandes-ganadores .figure img {
+  width: 200px;
+  transition: opacity 0.3s ease;
+}
+.grandes-ganadores .figure img:hover {
+  opacity: 0.3;
 }
 
 #galeria {
@@ -174,11 +169,19 @@ figure img {
   background-image: url(../images/galeria/6.jpg);
   grid-area: foto1;
 }
+.foto1:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
 
 .foto2 {
   background-image: url(../images/galeria/R.jpeg);
   grid-area: foto2;
   height: 100%;
+}
+.foto2:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 
 .foto3 {
@@ -186,39 +189,61 @@ figure img {
   grid-area: foto3;
   height: 400px;
 }
+.foto3:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
 
 .foto4 {
   background-image: url(../images/galeria/4.jpeg);
   grid-area: foto4;
+}
+.foto4:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 
 .foto5 {
   background-image: url(../images/galeria/3.jpeg);
   grid-area: foto5;
 }
+.foto5:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
 
 .foto6 {
   background-image: url(../images/galeria/1.jpg);
   grid-area: foto6;
+}
+.foto6:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
 }
 
 .foto7 {
   background-image: url(../images/galeria/2.png);
   grid-area: foto7;
 }
+.foto7:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
 
 .foto8 {
   background-image: url(../images/galeria/8.jpg);
   grid-area: foto8;
 }
-
-.foto1:hover, .foto2:hover, .foto3:hover, .foto4:hover, .foto5:hover, .foto6:hover, .foto7:hover, .foto8:hover {
+.foto8:hover {
   transform: scale(1.2);
   transition: transform 0.3s ease;
 }
 
 .video {
   gap: 25px;
+}
+.video iframe {
+  max-width: 100%;
 }
 
 @media (min-width: 425px) {
@@ -239,57 +264,52 @@ figure img {
     flex-direction: row;
   }
 }
-.logo-principal {
-  width: 150px;
-}
-
-body {
-  background: linear-gradient(180deg, #fff 10%, rgba(51, 221, 255, 0.2666666667), rgb(64, 228, 196));
-}
-
 footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.bi {
-  font-size: 1.3rem;
-  color: black;
-}
-
-.redes-sociales {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-}
-
-.sponsors img {
-  width: 80px;
-}
-
-.sponsors {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
+  margin: 0 auto;
   gap: 10px;
 }
-
-/*Estilos ganadores.html*/
-.title-carrera {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: 2rem;
+footer .sponsors {
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+footer h3 {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+footer .img-thumbnail {
+  width: 60px;
+  height: 20px;
+  background-color: rgb(64, 228, 196);
+  border: solid 1px transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+footer .rrss {
+  gap: 20px;
+}
+footer .rrss .bi {
+  font-size: 1.3rem;
+  color: rgb(18, 19, 19);
 }
 
-.formulario {
-  width: 80%;
+@media (max-width: 425px) {
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
-
-.rrss {
-  gap: 24px;
-}
-
 /* font-family: 'Bebas Neue', sans-serif;
 font-family: 'Croissant One', cursive; */
 

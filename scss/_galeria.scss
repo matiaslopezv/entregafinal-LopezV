@@ -1,4 +1,5 @@
 // galeria.html
+
 #galeria{
     display:grid;
     grid-template-areas:
@@ -11,80 +12,104 @@
 }
 
 .foto1, .foto2, .foto3, .foto4, .foto5, .foto6, .foto7, .foto8{
-    max-width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include fotos;
 }
 
 .foto1{
     background-image: url(../images/galeria/6.jpg);
     grid-area: foto1; 
+    &:hover{
+        transform: scale(1.2); 
+        transition: transform 0.3s ease; 
+    }
 }
 
 .foto2{
     background-image: url(../images/galeria/R.jpeg);
     grid-area: foto2;
     height:100%;
+    &:hover{
+        transform: scale(1.2); 
+        transition: transform 0.3s ease; 
+    }
 }
 
 .foto3{
     background-image: url(../images/galeria/5.jpg);
     grid-area: foto3;
     height: 400px;
+    &:hover{
+        transform: scale(1.2); 
+        transition: transform 0.3s ease; 
+    }
 }
 
 .foto4{
     background-image: url(../images/galeria/4.jpeg);
     grid-area: foto4;
+    &:hover{
+        transform: scale(1.2); 
+        transition: transform 0.3s ease; 
+    }
 }
 
 .foto5{
     background-image: url(../images/galeria/3.jpeg);
     grid-area: foto5;
+    &:hover{
+        transform: scale(1.2); 
+        transition: transform 0.3s ease; 
+    }
 }
 
 .foto6{
     background-image: url(../images/galeria/1.jpg);
     grid-area: foto6;
+    &:hover{
+        transform: scale(1.2); 
+        transition: transform 0.3s ease; 
+    }
 }
 
 .foto7{
     background-image: url(../images/galeria/2.png);
     grid-area: foto7;
+    &:hover{
+        transform: scale(1.2); 
+        transition: transform 0.3s ease; 
+    }
 }
 
 .foto8{
     background-image: url(../images/galeria/8.jpg);
     grid-area: foto8;
-}
-
-.foto1:hover, .foto2:hover, .foto3:hover, .foto4:hover, .foto5:hover, .foto6:hover, .foto7:hover, .foto8:hover {
-    transform: scale(1.2); 
-    transition: transform 0.3s ease; 
+    &:hover{
+        transform: scale(1.2); 
+        transition: transform 0.3s ease; 
+    }
 }
 
 .video{
     gap:25px;
-    // display: flex;
+
+    iframe{
+        max-width: 100%;
+    }
 }
 
 @media(min-width:425px){
     .video{
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
     }
 }
 @media(max-width:768px){
     .video{
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
     }
 }
 @media(min-width:769px){
     .video{
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
     }
 }
+

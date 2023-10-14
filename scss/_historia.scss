@@ -1,42 +1,37 @@
 /* Estilos historia.html */
-.bi-bicycle{
-    font-size: 2.3rem;
-}
-
-.bi-feather{
-    font-size: 2rem;
-}
-
 .historia-title{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.8rem;
+    .bi-feather{
+        font-size: 2rem;
+    }
+    .bi-bicycle{
+    font-size: 2.3rem;
+}
 }
 .historia-texto{
     font-family: 'Bebas Neue', sans-serif;
 }
-
-figure img{
-    width:200px;
-}
-.figure img {
-    width: 200px;
-    transition: opacity 0.3s ease; 
-}
-
-.figure img:hover {
-    opacity: 0.3; 
-}
-.figure-caption{
-    color:black;
-    font-weight: bold;
-}
-
-.grandes-ganadores img{
-    height: 30vh;
-}
-
 .grandes-ganadores{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+
+    img{
+        height: 30vh;
+    }
+
+    .figure img {
+        width: 200px;
+        transition: opacity 0.3s ease; 
+        &:hover{
+            opacity: 0.3; 
+        }
+    }
+    
 }
+
+
+
+
+

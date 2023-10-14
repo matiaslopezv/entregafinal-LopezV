@@ -1,5 +1,12 @@
+body{
+    background: linear-gradient(180deg,#fff 10%,#3df4,rgb(64, 228, 196));
+}
+
 img{
     max-width: 100%;
+}
+.logo-principal{
+    width: 150px;
 }
 
 .nav-link{
@@ -78,17 +85,16 @@ img{
     }
 }
 
-.winners img{
-    width: 200px;
-    border-radius:50%;
-    border: solid 1px;
-}
-
-
 .winners{
     display: flex;
     flex-direction: column;
     cursor: pointer;
+
+    img{
+        width: 200px;
+        border-radius:50%;
+        border: solid 1px;
+    }
 }
 #nombres-ganadores{
     display: none;
