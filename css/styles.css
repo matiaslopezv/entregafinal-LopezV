@@ -8,6 +8,7 @@
 font-family: 'Croissant One', cursive; */
 body {
   background: linear-gradient(180deg, #fff 10%, rgba(51, 221, 255, 0.2666666667), rgb(64, 228, 196));
+  height: 100vh;
 }
 
 img {
@@ -237,6 +238,7 @@ img {
 
 .video {
   gap: 25px;
+  margin: 0 auto;
 }
 .video iframe {
   max-width: 100%;
